@@ -2,7 +2,6 @@
 CORRECT:
 2599,2610,2947,2052,2367,2399,2029,2442,2505,3068
 
-https://stackabuse.com/courses/graphs-in-python-theory-and-implementation/lessons/dijkstras-algorithm/
 
 """
 
