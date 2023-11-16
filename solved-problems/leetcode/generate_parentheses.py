@@ -1,3 +1,8 @@
+"""
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+"""
+
 class Solution:
     
     def backtracking(self, cur_string, left_count, right_count, n, answer):
@@ -18,6 +23,10 @@ class Solution:
             cur_string.pop()
     
     def keep_candidate_valid(self, n):
+        '''
+        Time complexity: O(4ˆn/sqrt(n))
+        Space complexity: O(n)
+        '''
         answer = []
         cur_string = []
         left_count = 0
