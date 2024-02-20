@@ -57,7 +57,7 @@ if __name__ == "__main__":
     # Initialize explored and queue with source vertex, in this case 2
     q = Queue()
     q.put(2)
-    explored = {2:0}
+    explored = {2:0} # O is set for the initial distance 0
     BFS.bfs_recursive(explored, q)
 
     print("======= EXAMPLE 2 ======= ")
@@ -79,6 +79,6 @@ if __name__ == "__main__":
     # Initialize explored and queue with source vertex, in this case 2
     q = Queue()
     q.put('s')
-    explored = {'s':0}
+    explored = {'s':0} # O is set for the initial distance 0
     BFS.bfs_recursive(explored, q)
 
