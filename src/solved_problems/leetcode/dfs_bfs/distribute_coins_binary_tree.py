@@ -33,9 +33,20 @@ class Solution:
         return coins_exchange, moves
 
     def distributeCoins(self, root: Optional[TreeNode]) -> int:
+        '''
+        Problem solved with Deep First Search approach.
+        Let n be the number of nodes in the tree.
+        Time complexity: O(n).  Traversing the tree using DFS costs O(n), 
+                                as we visit each node exactly once and perform O(1) of work at each visit.
+        Space complexity: O(n). The space complexity of DFS, when implemented recursively, 
+                                is determined by the maximum depth of the call stack, 
+                                which corresponds to the depth of the tree. In the worst case, 
+                                if the tree is entirely unbalanced (e.g., a linked list or a left/right skewed tree), 
+                                the call stack can grow as deep as the number of nodes, resulting in a space complexity of O(n).
+        '''
         moves = 0
         coins_exchange , moves = self.dfs(root)
-        return moves 
+        return moves
 
     def create_tree(self, arr):
         '''
@@ -68,7 +79,7 @@ class Solution:
 
 
 if __name__ == "__main__":
-    
+
     print(f'Welcome to Distribute Coins Binary Tree Problem')
     SOL = Solution()
     arr =  [3,0,0]
